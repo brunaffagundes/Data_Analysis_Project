@@ -1,6 +1,5 @@
 # Data_Analysis_Project
 Projeto de análise de dados para estudo prático.
-# Data Analysis Project
 Este repositório contém o projeto de análise de dados para a disciplina de Projeto Aplicado I do segundo semestre, da Universidade Presbiteriana Mackenzie
 ## Objetivos e Metas
 - **Objetivo**: [A DEFINIR]
