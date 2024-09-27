@@ -4,6 +4,14 @@
 
 Este repositório contém o projeto de análise de dados desenvolvido para a disciplina de Projeto Aplicado I, do segundo semestre da Universidade Presbiteriana Mackenzie. O estudo foca na análise da popularidade das músicas no Spotify.
 
+## Discentes
+
+- Bianca Rezk de Angelo Correa
+
+- Bruna Fagundes Pereira Queiroz
+
+- Caio Cesar Teixeira Rocha
+
 ## Objetivo Principal
 
 Analisar os fatores que influenciam a popularidade das músicas no Spotify e identificar padrões que possam prever o sucesso de novas faixas.
