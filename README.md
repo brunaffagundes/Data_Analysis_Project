@@ -2,7 +2,7 @@
 Projeto de análise de dados para estudo prático.
 Este repositório contém o projeto de análise de dados para a disciplina de Projeto Aplicado I do segundo semestre, da Universidade Presbiteriana Mackenzie
 ## Objetivos e Metas
-- **Objetivo**: [A DEFINIR]
+- **Objetivo**: O objetivo desse estudo é analisar a popularidade das músicas no Spotify, buscando entender os fatores que influenciam essa popularidade e identificar padrões que possam ser utilizados para prever o sucesso de novas músicas.
 - **Metas**: [A DEFINIR]
 ## Cronograma de Atividades
 - **Etapa 1: Planejamento e Definição de Objetivos** (entrega 02/09/2024)
