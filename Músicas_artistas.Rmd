@@ -1,0 +1,107 @@
+---
+title: "Artistas e Músicas de 2017"
+author: "Bianca Rezk"
+date: "2024-09-29"
+output: html_document
+---
+
+"Análise das Músicas Mais Populares do Spotify em 2017"
+
+
+## Introdução
+O objetivo desta análise é entender a diversidade dos artistas, a contagem de músicas e a duração média das músicas, com base nos dados das músicas mais populares do Spotify em 2017.
+
+
+## Carregando Bibliotecas
+```{r}
+library(readr)
+library(dplyr)
+
+
+##Definindo o Diretório de Trabalho
+setwd("C:/Users/bianc/OneDrive/Documentos")
+
+
+##Lendo os Dados
+df <- read_csv("top_spotify_tracks_2017.csv")
+
+
+## Verificando a Dimensão do Dataset- quantas linhas e colunas o dataset possui.
+dim(df)
+
+
+##Verificando os Nomes das Colunas
+colnames(df)
+
+
+##Verificando as Primeiras Linhas do Dataset
+
+#Exibindo as primeiras 6 linhas para uma visualização inicial dos dados.
+head(df)
+
+
+###Contando o Número de Artistas Distintos
+artists <- df %>% summarise(n_artistas = n_distinct(artists))
+
+artists
+
+##Resultado: 78 artistas distintos no dataset.
+
+#Análise: com 78 artistas distintos presentes nas 100 músicas mais populares de 2017 concluímos que tivemos uma diversidade musical significativa nas músicas mais populares do Spotify em 2017. Isso mostra como a plataforma abrange uma variedade de estilos e gêneros, atraindo mais usuários.
+
+
+###Contando Quantas Músicas Cada Artista Tem
+artistas_mais_musicas <- df %>%
+  count(artists, sort = TRUE) %>%
+  head(10)
+
+artistas_mais_musicas
+
+##Resultado: Os 10 artistas com mais músicas são:
+1        Ed Sheeran 4 músicas
+2  The Chainsmokers 4 músicas
+3             Drake 3 músicas
+4     Martin Garrix 3 músicas
+5        Bruno Mars 2 músicas
+6     Calvin Harris 2 músicas
+7      Clean Bandit 2 músicas
+8         DJ Khaled 2 músicas
+9   Imagine Dragons 2 músicas
+10   Kendrick Lamar 2 músicas
+
+
+#Análise: com essa análise concluímos quais artistas estavam em alta naquele ano. Isso também pode refletir a quantidade de lançamentos que esses artistas lançaram nesse ano, indicando também o gênero musical que mais estava nas playlists dos usuários.
+
+
+###Duração Média das Músicas
+media_duracao <- mean(df$duration_ms) / 60000  
+print(paste("Duração média das músicas: ", round(media_duracao, 2), "minutos"))
+
+##Resultado: A duração média das músicas é de aproximadamente 3:64 minutos.
+
+#Análise: considerando que músicas com menos de 3 minutos são classificadas como curtas e músicas acima de 4 minutos são consideradas longas, a média de duração das músicas resultou em um meio termo, mostrando o porque foram tão populares na época.
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
