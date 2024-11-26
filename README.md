@@ -44,3 +44,8 @@ Analisar os fatores que influenciam a popularidade das músicas no Spotify e ide
 | 2 | Definição do Produto e Análise Exploratória de Dados | 30/09/2024 |
 | 3 | Storytelling e Apresentação de Resultados | 28/10/2024 |
 | 4 | Encerramento e Ajustes Finais | 25/11/2024 |
+
+
+## Apresentação do Projeto
+- [Documento em PDF](https://github.com/brunaffagundes/Data_Analysis_Project/blob/main/Projeto_Aplicado_I_Final.pdf)
+- [Apresentação no Youtube](https://youtu.be/ERirLiuSuXc?si=LO7gz55MxATETLZC)
